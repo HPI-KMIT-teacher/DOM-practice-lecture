@@ -3,8 +3,23 @@
 <head>
   <title>DOM Demo</title>
   <style>
+    .container {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid navy;
+    transition: all 0.8s;
+    text-align: center;
+    padding-top: 50px;
+    margin: 12px;
+    }
     .highlight {
-        background-color: blueviolet;
+    background-color: yellow;
+    font-weight: bold;
+    }
+    .active {
+    background-color: green;
+    color: white;
     }
   </style>
 </head>
@@ -20,8 +35,31 @@
   <div class="box">Box 1</div>
   <div class="box">Box 2</div>
   <div class="box special">Box 3</div>
-  <input type="text" id="username" value="Іван">
-  <input type="checkbox" id="agree">
+  <br>
+  <hr>
+  <br>
+  <div>
+    <p id="greeting"></p>
+    <input type="text" id="nameInput" placeholder="Введіть своє ім'я">
+    <button id="greetBtn">Привітати</button>
+    <p id="inputResult"></p>
+    
+  </div>
+  <br>
+  <div id="box" class="container">Блок</div>
+  <button id="highlightBtn">Підсвітити</button>
+<button id="activateBtn">Активувати</button>
+  <button id="colorBtn">Змінити колір</button>
+  <br><br>
+
+  <img height="120px" id="photo" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Ntu-khpi-logo.png" alt="ХПІ лого">
+    <br>
+  <a id="link" href="https://example.com">Посилання</a>
+
+
+  <!-- <input type="text" id="username" value="Іван">
+  <input type="checkbox" id="agree"> -->
+
   <script src="script.js"></script>
 </body>
 </html>
